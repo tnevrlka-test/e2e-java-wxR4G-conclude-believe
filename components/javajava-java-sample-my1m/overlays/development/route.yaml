@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: javajava-java-sample-my1m
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: javajava-java-sample-my1m
+    app.kubernetes.io/part-of: e2e-java
+  name: javajava-java-sample-my1mrm8e
+spec:
+  path: /
+  port:
+    targetPort: 8081
+  to:
+    kind: Service
+    name: javajava-java-sample-my1m
+    weight: null
+status: {}
